@@ -1,0 +1,5 @@
+interface:
+  display_name: "전자책 원스톱 스튜디오"
+  short_description: "주제부터 집필·Word 편집·장별 이미지까지 한 번에 제작"
+  brand_color: "#7C5AA6"
+  default_prompt: "Use $ebook-studio to turn my topic into a polished Korean ebook with an editable Word file and coordinated cover, copyright, and chapter images."

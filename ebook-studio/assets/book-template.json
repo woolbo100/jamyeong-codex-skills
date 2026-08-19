@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "책 제목",
+    "subtitle": "독자가 얻게 될 변화를 설명하는 부제",
+    "author": "저자명",
+    "brand": "브랜드명",
+    "publisher": "출판사명",
+    "publication_date": "",
+    "isbn": "",
+    "contact": "",
+    "copyright": "Copyright © 저자명. All rights reserved.",
+    "disclaimer": ""
+  },
+  "design": {
+    "page": "A5",
+    "accent": "#7C5AA6",
+    "text": "#2C2630",
+    "muted": "#F2ECF6",
+    "font": "Malgun Gothic",
+    "cover_image": "images/cover.png",
+    "copyright_background": "images/copyright.png"
+  },
+  "front_matter": [
+    {"type": "heading", "text": "프롤로그"},
+    {"type": "paragraph", "text": "프롤로그 본문을 입력하세요."}
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "첫 번째 장 제목",
+      "subtitle": "장 핵심 메시지",
+      "image": "images/ch01.png",
+      "blocks": [
+        {"type": "heading", "level": 2, "text": "소제목"},
+        {"type": "paragraph", "text": "본문을 입력하세요."},
+        {"type": "quote", "text": "핵심 문장"},
+        {"type": "callout", "title": "오늘의 실천", "text": "실천 과제를 입력하세요."},
+        {"type": "checklist", "title": "자기점검", "items": ["점검 항목 1", "점검 항목 2"]}
+      ]
+    }
+  ],
+  "back_matter": [
+    {"type": "heading", "text": "에필로그"},
+    {"type": "paragraph", "text": "에필로그 본문을 입력하세요."}
+  ]
+}

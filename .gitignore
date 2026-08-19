@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Generated ebook outputs
+*.docx
+*.pdf
+*.zip
+outputs/
+dist/
+build/
+tmp/
+temp/
+work/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
