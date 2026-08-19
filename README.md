@@ -1,8 +1,11 @@
 # jamyeong-codex-skills
 
-Version: v1.0.0
+Version: v1.1.0
 
-`ebook-studio` is a Codex skill for planning and producing Korean ebooks from a topic, outline, or draft. It helps with editorial structure, manuscript writing, editable Word output, cover direction, copyright-page background imagery, and chapter opener image planning.
+`jamyeong-codex-skills` is a collection of Codex skills for Korean content, design, and brand asset production.
+
+- `ebook-studio`: plans and produces Korean ebooks from a topic, outline, or draft. It helps with editorial structure, manuscript writing, editable Word output, cover direction, copyright-page background imagery, and chapter opener image planning.
+- `logo-automation-system`: creates logo concepts, logo variations, brand-fit mockup prompts/assets, and concise brand guidelines from a brand brief and optional reference images.
 
 ## 주요 기능
 
@@ -12,6 +15,9 @@ Version: v1.0.0
 - 표지, 판권 배경, 장별 오프너 이미지를 위한 통일된 아트디렉션
 - `book.json` 입력을 편집 가능한 `.docx` 파일로 변환하는 빌드 스크립트
 - Word 스타일 기반 제목, 본문, 인용, 실천 박스, 자동 목차 안내 생성
+- 브랜드 브리프를 바탕으로 9개의 로고 콘셉트 방향 제안
+- 선택한 로고 콘셉트의 9개 세부 변형 제작 워크플로우
+- 브랜드 성격에 맞는 목업 추천과 브랜드 가이드라인 작성
 
 ## 저장소 구조
 
@@ -23,26 +29,33 @@ ebook-studio/
 |-- references/
 |-- scripts/
 `-- templates/
+
+logo-automation-system/
+`-- SKILL.md
 ```
 
 ## 설치 방법
 
-Codex 스킬 폴더에 이 저장소의 `ebook-studio` 폴더를 복사합니다.
+Codex 스킬 폴더에 이 저장소의 원하는 스킬 폴더를 복사합니다.
 
 ```powershell
 git clone https://github.com/woolbo100/jamyeong-codex-skills.git
-Copy-Item -Recurse -Force .\ebook-studio\ebook-studio "$env:USERPROFILE\.codex\skills\ebook-studio"
+cd .\jamyeong-codex-skills
+Copy-Item -Recurse -Force .\ebook-studio "$env:USERPROFILE\.codex\skills\ebook-studio"
+Copy-Item -Recurse -Force .\logo-automation-system "$env:USERPROFILE\.codex\skills\logo-automation-system"
 ```
 
 macOS 또는 Linux에서는 다음처럼 복사할 수 있습니다.
 
 ```bash
 git clone https://github.com/woolbo100/jamyeong-codex-skills.git
+cd jamyeong-codex-skills
 mkdir -p ~/.codex/skills
-cp -R ebook-studio/ebook-studio ~/.codex/skills/ebook-studio
+cp -R ebook-studio ~/.codex/skills/ebook-studio
+cp -R logo-automation-system ~/.codex/skills/logo-automation-system
 ```
 
-설치 후 새 Codex 작업에서 `$ebook-studio`로 호출할 수 있습니다.
+설치 후 새 Codex 작업에서 `$ebook-studio` 또는 `$logo-automation-system`으로 호출할 수 있습니다.
 
 ## 사용 예시
 
@@ -53,6 +66,10 @@ Use $ebook-studio to create a Korean lead-magnet ebook for beginner freelancers 
 ```text
 $ebook-studio
 관계에서 나를 잃지 않는 법을 주제로 7장짜리 한국어 전자책을 만들어줘. 표지는 제목을 상단에, 저자와 출판사를 하단에 넣어줘.
+```
+
+```text
+Use $logo-automation-system to create logo concepts, variations, mockups, and brand guidelines for a premium Korean tea brand. Main color is deep green, target audience is women in their 30s and 40s, and the mood is calm, refined, and natural.
 ```
 
 ## DOCX 빌드
