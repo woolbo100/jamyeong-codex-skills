@@ -1,4 +1,4 @@
-# ebook-studio
+# jamyeong-codex-skills
 
 Version: v1.0.0
 
@@ -30,14 +30,14 @@ ebook-studio/
 Codex 스킬 폴더에 이 저장소의 `ebook-studio` 폴더를 복사합니다.
 
 ```powershell
-git clone https://github.com/woolbo100/ebook-studio.git
+git clone https://github.com/woolbo100/jamyeong-codex-skills.git
 Copy-Item -Recurse -Force .\ebook-studio\ebook-studio "$env:USERPROFILE\.codex\skills\ebook-studio"
 ```
 
 macOS 또는 Linux에서는 다음처럼 복사할 수 있습니다.
 
 ```bash
-git clone https://github.com/woolbo100/ebook-studio.git
+git clone https://github.com/woolbo100/jamyeong-codex-skills.git
 mkdir -p ~/.codex/skills
 cp -R ebook-studio/ebook-studio ~/.codex/skills/ebook-studio
 ```
