@@ -1,12 +1,13 @@
 # jamyeong-codex-skills
 
-Version: v1.2.0
+Version: v1.3.0
 
 `jamyeong-codex-skills` is a collection of Codex skills for Korean content, design, and brand asset production.
 
 - `ebook-studio`: plans and produces Korean ebooks from a topic, outline, or draft. It helps with editorial structure, manuscript writing, editable Word output, cover direction, copyright-page background imagery, and chapter opener image planning.
 - `brand-sns-content-studio`: turns one topic into brand-aligned Korean content tailored for multiple SNS channels, including channel-specific copy, captions, carousel scripts, short-form video scripts, titles, CTAs, hashtags, and repurposing plans.
 - `logo-automation-system`: creates logo concepts, logo variations, brand-fit mockup prompts/assets, and concise brand guidelines from a brand brief and optional reference images.
+- `homepage-brief-to-site`: guides users through a homepage worksheet, turns answers into a design brief, and builds a polished homepage using `design-taste-frontend`.
 
 ## 주요 기능
 
@@ -21,6 +22,8 @@ Version: v1.2.0
 - 브랜드 성격에 맞는 목업 추천과 브랜드 가이드라인 작성
 - 한 주제를 네이버 블로그, 인스타그램, 스레드, 유튜브 쇼츠 등 채널별 원고로 재기획
 - 브랜드 말투, 타깃 감정, 콘텐츠 목적, CTA를 유지한 멀티채널 SNS 콘텐츠 제작
+- 홈페이지 제작 전 필요한 브랜드, 타깃, 전환 목표, 콘텐츠, 자산, 디자인 방향 워크시트 수집
+- 워크시트 답변을 디자인 브리프로 정리하고 `design-taste-frontend` 기반 고급 홈페이지 제작
 
 ## 저장소 구조
 
@@ -40,6 +43,11 @@ ebook-studio/
 
 logo-automation-system/
 `-- SKILL.md
+
+homepage-brief-to-site/
+|-- SKILL.md
+|-- agents/
+`-- references/
 ```
 
 ## 설치 방법
@@ -52,6 +60,7 @@ cd .\jamyeong-codex-skills
 Copy-Item -Recurse -Force .\ebook-studio "$env:USERPROFILE\.codex\skills\ebook-studio"
 Copy-Item -Recurse -Force .\brand-sns-content-studio "$env:USERPROFILE\.codex\skills\brand-sns-content-studio"
 Copy-Item -Recurse -Force .\logo-automation-system "$env:USERPROFILE\.codex\skills\logo-automation-system"
+Copy-Item -Recurse -Force .\homepage-brief-to-site "$env:USERPROFILE\.codex\skills\homepage-brief-to-site"
 ```
 
 macOS 또는 Linux에서는 다음처럼 복사할 수 있습니다.
@@ -63,9 +72,10 @@ mkdir -p ~/.codex/skills
 cp -R ebook-studio ~/.codex/skills/ebook-studio
 cp -R brand-sns-content-studio ~/.codex/skills/brand-sns-content-studio
 cp -R logo-automation-system ~/.codex/skills/logo-automation-system
+cp -R homepage-brief-to-site ~/.codex/skills/homepage-brief-to-site
 ```
 
-설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, 또는 `$logo-automation-system`으로 호출할 수 있습니다.
+설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, 또는 `$homepage-brief-to-site`로 호출할 수 있습니다.
 
 ## 사용 예시
 
@@ -90,6 +100,11 @@ $brand-sns-content-studio
 주제: 그림을 못 그려도 그림책을 만들 수 있는 이유
 목적: 무료 설명회 신청
 채널: 네이버 블로그, 인스타그램, 스레드, 유튜브 쇼츠
+```
+
+```text
+$homepage-brief-to-site
+개인 브랜딩 홈페이지를 만들고 싶어. 먼저 필요한 정보를 워크시트로 받아서, 고급스러운 디자인 콘셉트로 홈페이지까지 제작해줘.
 ```
 
 ## DOCX 빌드
