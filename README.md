@@ -1,10 +1,11 @@
 # jamyeong-codex-skills
 
-Version: v1.1.0
+Version: v1.2.0
 
 `jamyeong-codex-skills` is a collection of Codex skills for Korean content, design, and brand asset production.
 
 - `ebook-studio`: plans and produces Korean ebooks from a topic, outline, or draft. It helps with editorial structure, manuscript writing, editable Word output, cover direction, copyright-page background imagery, and chapter opener image planning.
+- `brand-sns-content-studio`: turns one topic into brand-aligned Korean content tailored for multiple SNS channels, including channel-specific copy, captions, carousel scripts, short-form video scripts, titles, CTAs, hashtags, and repurposing plans.
 - `logo-automation-system`: creates logo concepts, logo variations, brand-fit mockup prompts/assets, and concise brand guidelines from a brand brief and optional reference images.
 
 ## 주요 기능
@@ -18,10 +19,17 @@ Version: v1.1.0
 - 브랜드 브리프를 바탕으로 9개의 로고 콘셉트 방향 제안
 - 선택한 로고 콘셉트의 9개 세부 변형 제작 워크플로우
 - 브랜드 성격에 맞는 목업 추천과 브랜드 가이드라인 작성
+- 한 주제를 네이버 블로그, 인스타그램, 스레드, 유튜브 쇼츠 등 채널별 원고로 재기획
+- 브랜드 말투, 타깃 감정, 콘텐츠 목적, CTA를 유지한 멀티채널 SNS 콘텐츠 제작
 
 ## 저장소 구조
 
 ```text
+brand-sns-content-studio/
+|-- SKILL.md
+|-- agents/
+`-- references/
+
 ebook-studio/
 |-- SKILL.md
 |-- agents/
@@ -42,6 +50,7 @@ Codex 스킬 폴더에 이 저장소의 원하는 스킬 폴더를 복사합니�
 git clone https://github.com/woolbo100/jamyeong-codex-skills.git
 cd .\jamyeong-codex-skills
 Copy-Item -Recurse -Force .\ebook-studio "$env:USERPROFILE\.codex\skills\ebook-studio"
+Copy-Item -Recurse -Force .\brand-sns-content-studio "$env:USERPROFILE\.codex\skills\brand-sns-content-studio"
 Copy-Item -Recurse -Force .\logo-automation-system "$env:USERPROFILE\.codex\skills\logo-automation-system"
 ```
 
@@ -52,10 +61,11 @@ git clone https://github.com/woolbo100/jamyeong-codex-skills.git
 cd jamyeong-codex-skills
 mkdir -p ~/.codex/skills
 cp -R ebook-studio ~/.codex/skills/ebook-studio
+cp -R brand-sns-content-studio ~/.codex/skills/brand-sns-content-studio
 cp -R logo-automation-system ~/.codex/skills/logo-automation-system
 ```
 
-설치 후 새 Codex 작업에서 `$ebook-studio` 또는 `$logo-automation-system`으로 호출할 수 있습니다.
+설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, 또는 `$logo-automation-system`으로 호출할 수 있습니다.
 
 ## 사용 예시
 
@@ -70,6 +80,16 @@ $ebook-studio
 
 ```text
 Use $logo-automation-system to create logo concepts, variations, mockups, and brand guidelines for a premium Korean tea brand. Main color is deep green, target audience is women in their 30s and 40s, and the mood is calm, refined, and natural.
+```
+
+```text
+$brand-sns-content-studio
+브랜드명: 온마음 공방
+분야: 중년 여성을 위한 그림책 수업
+타깃: 새로운 취미와 자기표현을 원하는 40~60대 여성
+주제: 그림을 못 그려도 그림책을 만들 수 있는 이유
+목적: 무료 설명회 신청
+채널: 네이버 블로그, 인스타그램, 스레드, 유튜브 쇼츠
 ```
 
 ## DOCX 빌드

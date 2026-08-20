@@ -1,0 +1,4 @@
+interface:
+  display_name: "브랜드 SNS 콘텐츠 스튜디오"
+  short_description: "한 주제를 브랜드별 멀티채널 콘텐츠로 확장합니다"
+  default_prompt: "Use $brand-sns-content-studio to turn one topic into brand-aligned content for multiple social channels."
