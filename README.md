@@ -1,6 +1,6 @@
 # jamyeong-codex-skills
 
-Version: v1.3.0
+Version: v1.4.0
 
 `jamyeong-codex-skills` is a collection of Codex skills for Korean content, design, and brand asset production.
 
@@ -8,6 +8,7 @@ Version: v1.3.0
 - `brand-sns-content-studio`: turns one topic into brand-aligned Korean content tailored for multiple SNS channels, including channel-specific copy, captions, carousel scripts, short-form video scripts, titles, CTAs, hashtags, and repurposing plans.
 - `logo-automation-system`: creates logo concepts, logo variations, brand-fit mockup prompts/assets, and concise brand guidelines from a brand brief and optional reference images.
 - `homepage-brief-to-site`: guides users through a homepage worksheet, turns answers into a design brief, and builds a polished homepage using `design-taste-frontend`.
+- `anime-cardnews-studio`: turns a person photo into a consistent cute adult chibi character and creates Korean Instagram carousel card news with headline/body copy, locked palette, and consistent card-by-card visuals.
 
 ## 주요 기능
 
@@ -24,6 +25,8 @@ Version: v1.3.0
 - 브랜드 말투, 타깃 감정, 콘텐츠 목적, CTA를 유지한 멀티채널 SNS 콘텐츠 제작
 - 홈페이지 제작 전 필요한 브랜드, 타깃, 전환 목표, 콘텐츠, 자산, 디자인 방향 워크시트 수집
 - 워크시트 답변을 디자인 브리프로 정리하고 `design-taste-frontend` 기반 고급 홈페이지 제작
+- 인물 사진을 바탕으로 동일한 치비/SD 캐릭터가 등장하는 인스타그램 카드뉴스 기획 및 이미지 생성
+- 카드별 제목, 작은 본문, 캐릭터 포즈, 시각 단서를 구성하고 일관된 색상/레이아웃 콘셉트 유지
 
 ## 저장소 구조
 
@@ -48,6 +51,11 @@ homepage-brief-to-site/
 |-- SKILL.md
 |-- agents/
 `-- references/
+
+anime-cardnews-studio/
+|-- SKILL.md
+|-- agents/
+`-- references/
 ```
 
 ## 설치 방법
@@ -61,6 +69,7 @@ Copy-Item -Recurse -Force .\ebook-studio "$env:USERPROFILE\.codex\skills\ebook-s
 Copy-Item -Recurse -Force .\brand-sns-content-studio "$env:USERPROFILE\.codex\skills\brand-sns-content-studio"
 Copy-Item -Recurse -Force .\logo-automation-system "$env:USERPROFILE\.codex\skills\logo-automation-system"
 Copy-Item -Recurse -Force .\homepage-brief-to-site "$env:USERPROFILE\.codex\skills\homepage-brief-to-site"
+Copy-Item -Recurse -Force .\anime-cardnews-studio "$env:USERPROFILE\.codex\skills\anime-cardnews-studio"
 ```
 
 macOS 또는 Linux에서는 다음처럼 복사할 수 있습니다.
@@ -73,9 +82,10 @@ cp -R ebook-studio ~/.codex/skills/ebook-studio
 cp -R brand-sns-content-studio ~/.codex/skills/brand-sns-content-studio
 cp -R logo-automation-system ~/.codex/skills/logo-automation-system
 cp -R homepage-brief-to-site ~/.codex/skills/homepage-brief-to-site
+cp -R anime-cardnews-studio ~/.codex/skills/anime-cardnews-studio
 ```
 
-설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, 또는 `$homepage-brief-to-site`로 호출할 수 있습니다.
+설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, `$homepage-brief-to-site`, 또는 `$anime-cardnews-studio`로 호출할 수 있습니다.
 
 ## 사용 예시
 
@@ -105,6 +115,11 @@ $brand-sns-content-studio
 ```text
 $homepage-brief-to-site
 개인 브랜딩 홈페이지를 만들고 싶어. 먼저 필요한 정보를 워크시트로 받아서, 고급스러운 디자인 콘셉트로 홈페이지까지 제작해줘.
+```
+
+```text
+$anime-cardnews-studio
+내 인물 사진을 귀여운 성인 치비 캐릭터로 바꾸고, AI 시대에 필요한 덕목을 주제로 블랙과 형광색 포인트 컬러의 인스타그램 카드뉴스를 만들어줘.
 ```
 
 ## DOCX 빌드

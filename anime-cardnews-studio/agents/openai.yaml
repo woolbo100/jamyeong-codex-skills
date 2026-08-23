@@ -1,0 +1,4 @@
+interface:
+  display_name: "애니 카드뉴스 스튜디오"
+  short_description: "인물 사진을 귀여운 치비 캐릭터 카드뉴스로 만듭니다"
+  default_prompt: "Use $anime-cardnews-studio to turn my portrait into a cute adult chibi character and create an optimized Instagram carousel."
