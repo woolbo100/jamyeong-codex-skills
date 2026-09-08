@@ -1,0 +1,4 @@
+interface:
+  display_name: "모션그래픽 스튜디오"
+  short_description: "강의 홍보와 브랜드 영상용 프리미엄 모션그래픽을 기획하고 구현합니다"
+  default_prompt: "Use $motion-graphic-studio to create a polished motion-graphic video concept or render-ready Remotion project from my brief."

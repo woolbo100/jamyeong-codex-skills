@@ -1,6 +1,6 @@
 # jamyeong-codex-skills
 
-Version: v1.4.0
+Version: v1.5.0
 
 `jamyeong-codex-skills` is a collection of Codex skills for Korean content, design, and brand asset production.
 
@@ -9,6 +9,7 @@ Version: v1.4.0
 - `logo-automation-system`: creates logo concepts, logo variations, brand-fit mockup prompts/assets, and concise brand guidelines from a brand brief and optional reference images.
 - `homepage-brief-to-site`: guides users through a homepage worksheet, turns answers into a design brief, and builds a polished homepage using `design-taste-frontend`.
 - `anime-cardnews-studio`: turns a person photo into a consistent cute adult chibi character and creates Korean Instagram carousel card news with headline/body copy, locked palette, and consistent card-by-card visuals.
+- `motion-graphic-studio`: plans and builds premium motion-graphic videos and Remotion projects for course promos, brand intros, SNS shorts, card-news videos, product explainers, and elegant text-led brand films.
 
 ## 주요 기능
 
@@ -27,6 +28,8 @@ Version: v1.4.0
 - 워크시트 답변을 디자인 브리프로 정리하고 `design-taste-frontend` 기반 고급 홈페이지 제작
 - 인물 사진을 바탕으로 동일한 치비/SD 캐릭터가 등장하는 인스타그램 카드뉴스 기획 및 이미지 생성
 - 카드별 제목, 작은 본문, 캐릭터 포즈, 시각 단서를 구성하고 일관된 색상/레이아웃 콘셉트 유지
+- 강의 홍보, 브랜드 인트로, 제품 소개, 쇼츠/릴스용 모션그래픽 기획 및 Remotion 프로젝트 생성
+- 장면 구성표, 카피, 디자인/모션 가이드, 렌더링 가능한 코드 구조까지 한 번에 정리
 
 ## 저장소 구조
 
@@ -56,6 +59,11 @@ anime-cardnews-studio/
 |-- SKILL.md
 |-- agents/
 `-- references/
+
+motion-graphic-studio/
+|-- SKILL.md
+|-- agents/
+`-- references/
 ```
 
 ## 설치 방법
@@ -70,6 +78,7 @@ Copy-Item -Recurse -Force .\brand-sns-content-studio "$env:USERPROFILE\.codex\sk
 Copy-Item -Recurse -Force .\logo-automation-system "$env:USERPROFILE\.codex\skills\logo-automation-system"
 Copy-Item -Recurse -Force .\homepage-brief-to-site "$env:USERPROFILE\.codex\skills\homepage-brief-to-site"
 Copy-Item -Recurse -Force .\anime-cardnews-studio "$env:USERPROFILE\.codex\skills\anime-cardnews-studio"
+Copy-Item -Recurse -Force .\motion-graphic-studio "$env:USERPROFILE\.codex\skills\motion-graphic-studio"
 ```
 
 macOS 또는 Linux에서는 다음처럼 복사할 수 있습니다.
@@ -83,9 +92,14 @@ cp -R brand-sns-content-studio ~/.codex/skills/brand-sns-content-studio
 cp -R logo-automation-system ~/.codex/skills/logo-automation-system
 cp -R homepage-brief-to-site ~/.codex/skills/homepage-brief-to-site
 cp -R anime-cardnews-studio ~/.codex/skills/anime-cardnews-studio
+cp -R motion-graphic-studio ~/.codex/skills/motion-graphic-studio
 ```
 
-설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, `$homepage-brief-to-site`, 또는 `$anime-cardnews-studio`로 호출할 수 있습니다.
+설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, `$homepage-brief-to-site`, `$anime-cardnews-studio`, 또는 `$motion-graphic-studio`로 호출할 수 있습니다.
+
+`motion-graphic-studio` GitHub 폴더 링크:
+
+<https://github.com/woolbo100/jamyeong-codex-skills/tree/main/motion-graphic-studio>
 
 ## 사용 예시
 
@@ -120,6 +134,11 @@ $homepage-brief-to-site
 ```text
 $anime-cardnews-studio
 내 인물 사진을 귀여운 성인 치비 캐릭터로 바꾸고, AI 시대에 필요한 덕목을 주제로 블랙과 형광색 포인트 컬러의 인스타그램 카드뉴스를 만들어줘.
+```
+
+```text
+$motion-graphic-studio
+15초짜리 AI 강의 홍보 모션그래픽 만들어줘. 세로형, 고급스럽고 신뢰감 있게. Remotion 코드까지 생성해줘.
 ```
 
 ## DOCX 빌드
