@@ -1,0 +1,4 @@
+interface:
+  display_name: "JMSCHOOL Free TTS"
+  short_description: "API 키 없이 대본을 자연스러운 TTS MP3로 변환"
+  default_prompt: "이 대본을 API 키 없이 자연스러운 한국어 TTS MP3로 만들어줘."
