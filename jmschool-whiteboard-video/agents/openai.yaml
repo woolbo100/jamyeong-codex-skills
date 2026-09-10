@@ -1,0 +1,4 @@
+interface:
+  display_name: "JMSCHOOL Explainer Whiteboard"
+  short_description: "무료 TTS와 오픈소스 렌더러로 정돈된 설명형 화이트보드 MP4 생성"
+  default_prompt: "이 주제나 대본으로 장면 콘티를 만들고, 그림이 점점 그려지는 설명형 화이트보드 애니메이션 MP4를 만들어줘."

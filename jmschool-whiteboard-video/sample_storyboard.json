@@ -1,0 +1,101 @@
+{
+  "title": "AI 자동화 시작하기",
+  "scene_count": 5,
+  "planning_rules": {
+    "screen_text": "headline plus 1-2 short supporting lines",
+    "display_sentence_rule": "Convert reading sentences into short visual phrases.",
+    "default_scene_range": "5-8"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "narration": "AI를 활용하면 반복 업무를 줄일 수 있습니다",
+      "short_headline": "반복 업무가 줄어듭니다",
+      "key_points": [
+        "시간이 생깁니다",
+        "중요한 일에 집중합니다"
+      ],
+      "visual_type": "technology",
+      "icon_type": "computer",
+      "emphasis_words": [
+        "반복",
+        "업무가",
+        "줄어듭니다"
+      ],
+      "layout_type": "title_left_icon_right",
+      "duration_hint": "auto"
+    },
+    {
+      "scene_number": 2,
+      "narration": "먼저 매일 반복되는 일을 적어보고, 사람이 꼭 해야 하는 일과 자동화할 일을 나눕니다",
+      "short_headline": "일을 나눕니다",
+      "key_points": [
+        "사람이 할 일",
+        "AI가 도울 일"
+      ],
+      "visual_type": "technology",
+      "icon_type": "computer",
+      "emphasis_words": [
+        "일을",
+        "나눕니다",
+        "사람이"
+      ],
+      "layout_type": "big_quote_center",
+      "duration_hint": "auto"
+    },
+    {
+      "scene_number": 3,
+      "narration": "간단한 글쓰기, 요약, 자료 정리부터 AI에게 맡기면 시간이 생깁니다",
+      "short_headline": "먼저 맡겨봅니다",
+      "key_points": [
+        "글쓰기",
+        "요약과 정리"
+      ],
+      "visual_type": "technology",
+      "icon_type": "computer",
+      "emphasis_words": [
+        "먼저",
+        "맡겨봅니다",
+        "글쓰기"
+      ],
+      "layout_type": "top_title_bottom_steps",
+      "duration_hint": "auto"
+    },
+    {
+      "scene_number": 4,
+      "narration": "그 시간은 더 중요한 판단과 고객과의 대화에 사용할 수 있습니다",
+      "short_headline": "중요한 일에 집중합니다",
+      "key_points": [
+        "판단할 시간",
+        "대화할 시간"
+      ],
+      "visual_type": "relationship",
+      "icon_type": "chat",
+      "emphasis_words": [
+        "중요한",
+        "일에",
+        "집중합니다"
+      ],
+      "layout_type": "problem_vs_solution",
+      "duration_hint": "auto"
+    },
+    {
+      "scene_number": 5,
+      "narration": "작게 시작하고 결과를 확인하면서 나만의 자동화 흐름을 만들어가면 됩니다",
+      "short_headline": "작게 시작합니다",
+      "key_points": [
+        "결과를 확인합니다",
+        "흐름을 만듭니다"
+      ],
+      "visual_type": "technology",
+      "icon_type": "computer",
+      "emphasis_words": [
+        "작게",
+        "시작합니다",
+        "결과를"
+      ],
+      "layout_type": "checklist_layout",
+      "duration_hint": "auto"
+    }
+  ]
+}
