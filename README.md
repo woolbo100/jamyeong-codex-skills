@@ -1,6 +1,6 @@
 # jamyeong-codex-skills
 
-Version: v1.5.0
+Version: v1.6.0
 
 `jamyeong-codex-skills` is a collection of Codex skills for Korean content, design, and brand asset production.
 
@@ -10,6 +10,7 @@ Version: v1.5.0
 - `homepage-brief-to-site`: guides users through a homepage worksheet, turns answers into a design brief, and builds a polished homepage using `design-taste-frontend`.
 - `anime-cardnews-studio`: turns a person photo into a consistent cute adult chibi character and creates Korean Instagram carousel card news with headline/body copy, locked palette, and consistent card-by-card visuals.
 - `motion-graphic-studio`: plans and builds premium motion-graphic videos and Remotion projects for course promos, brand intros, SNS shorts, card-news videos, product explainers, and elegant text-led brand films.
+- `naver-blog-ai-poster`: plans and writes Naver Blog posts, then uses a logged-in browser to enter title/body/tags, insert provided images when possible, and save drafts or publish only when explicitly requested.
 
 ## 주요 기능
 
@@ -30,6 +31,8 @@ Version: v1.5.0
 - 카드별 제목, 작은 본문, 캐릭터 포즈, 시각 단서를 구성하고 일관된 색상/레이아웃 콘셉트 유지
 - 강의 홍보, 브랜드 인트로, 제품 소개, 쇼츠/릴스용 모션그래픽 기획 및 Remotion 프로젝트 생성
 - 장면 구성표, 카피, 디자인/모션 가이드, 렌더링 가능한 코드 구조까지 한 번에 정리
+- 네이버 블로그용 제목, 본문, CTA, 해시태그를 기획하고 로그인된 브라우저에서 편집기에 입력
+- 기본은 임시저장, 사용자가 명시적으로 요청한 경우에만 공개 발행 또는 예약발행 수행
 
 ## 저장소 구조
 
@@ -64,6 +67,11 @@ motion-graphic-studio/
 |-- SKILL.md
 |-- agents/
 `-- references/
+
+naver-blog-ai-poster/
+|-- SKILL.md
+|-- agents/
+`-- references/
 ```
 
 ## 설치 방법
@@ -79,6 +87,7 @@ Copy-Item -Recurse -Force .\logo-automation-system "$env:USERPROFILE\.codex\skil
 Copy-Item -Recurse -Force .\homepage-brief-to-site "$env:USERPROFILE\.codex\skills\homepage-brief-to-site"
 Copy-Item -Recurse -Force .\anime-cardnews-studio "$env:USERPROFILE\.codex\skills\anime-cardnews-studio"
 Copy-Item -Recurse -Force .\motion-graphic-studio "$env:USERPROFILE\.codex\skills\motion-graphic-studio"
+Copy-Item -Recurse -Force .\naver-blog-ai-poster "$env:USERPROFILE\.codex\skills\naver-blog-ai-poster"
 ```
 
 macOS 또는 Linux에서는 다음처럼 복사할 수 있습니다.
@@ -93,9 +102,10 @@ cp -R logo-automation-system ~/.codex/skills/logo-automation-system
 cp -R homepage-brief-to-site ~/.codex/skills/homepage-brief-to-site
 cp -R anime-cardnews-studio ~/.codex/skills/anime-cardnews-studio
 cp -R motion-graphic-studio ~/.codex/skills/motion-graphic-studio
+cp -R naver-blog-ai-poster ~/.codex/skills/naver-blog-ai-poster
 ```
 
-설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, `$homepage-brief-to-site`, `$anime-cardnews-studio`, 또는 `$motion-graphic-studio`로 호출할 수 있습니다.
+설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, `$homepage-brief-to-site`, `$anime-cardnews-studio`, `$motion-graphic-studio`, 또는 `$naver-blog-ai-poster`로 호출할 수 있습니다.
 
 `motion-graphic-studio` GitHub 폴더 링크:
 
@@ -139,6 +149,11 @@ $anime-cardnews-studio
 ```text
 $motion-graphic-studio
 15초짜리 AI 강의 홍보 모션그래픽 만들어줘. 세로형, 고급스럽고 신뢰감 있게. Remotion 코드까지 생성해줘.
+```
+
+```text
+$naver-blog-ai-poster
+캔바 AI 활용법을 주제로 40~60대 강사 대상 네이버 블로그 글을 작성해서 임시저장해줘.
 ```
 
 ## DOCX 빌드

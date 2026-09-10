@@ -1,0 +1,11 @@
+# Browser auth/session files
+naver-auth.json
+*.auth.json
+
+# Secrets
+.env
+.env.*
+
+# Local browser artifacts
+*.webm
+*.har

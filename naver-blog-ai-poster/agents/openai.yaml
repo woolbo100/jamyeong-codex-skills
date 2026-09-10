@@ -1,0 +1,7 @@
+interface:
+  display_name: "Naver Blog AI Poster"
+  short_description: "네이버 블로그 글 작성·입력·임시저장 자동화"
+  brand_color: "#03C75A"
+  default_prompt: "Use $naver-blog-ai-poster to write a Naver Blog post and save it as a draft."
+policy:
+  allow_implicit_invocation: true
