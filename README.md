@@ -1,12 +1,13 @@
 # jamyeong-codex-skills
 
-Version: v1.6.0
+Version: v1.7.0
 
 `jamyeong-codex-skills` is a collection of Codex skills for Korean content, design, and brand asset production.
 
 - `ebook-studio`: plans and produces Korean ebooks from a topic, outline, or draft. It helps with editorial structure, manuscript writing, editable Word output, cover direction, copyright-page background imagery, and chapter opener image planning.
 - `brand-sns-content-studio`: turns one topic into brand-aligned Korean content tailored for multiple SNS channels, including channel-specific copy, captions, carousel scripts, short-form video scripts, titles, CTAs, hashtags, and repurposing plans.
 - `logo-automation-system`: creates logo concepts, logo variations, brand-fit mockup prompts/assets, and concise brand guidelines from a brand brief and optional reference images.
+- `one-person-brand-visual-kit`: builds a premium Korean one-person brand system from a founder brief, including Brand DNA, differentiated visual directions, logo, business card, SNS assets, poster, carousel, and motion storyboard guidance.
 - `homepage-brief-to-site`: guides users through a homepage worksheet, turns answers into a design brief, and builds a polished homepage using `design-taste-frontend`.
 - `anime-cardnews-studio`: turns a person photo into a consistent cute adult chibi character and creates Korean Instagram carousel card news with headline/body copy, locked palette, and consistent card-by-card visuals.
 - `motion-graphic-studio`: plans and builds premium motion-graphic videos and Remotion projects for course promos, brand intros, SNS shorts, card-news videos, product explainers, and elegant text-led brand films.
@@ -23,6 +24,9 @@ Version: v1.6.0
 - 브랜드 브리프를 바탕으로 9개의 로고 콘셉트 방향 제안
 - 선택한 로고 콘셉트의 9개 세부 변형 제작 워크플로우
 - 브랜드 성격에 맞는 목업 추천과 브랜드 가이드라인 작성
+- 1인 브랜드의 업종, 타깃, 가격대, 고객 감정에 맞는 프리미엄 비주얼 시스템 설계
+- Generic AI 템플릿 느낌을 줄이기 위한 100점 기준 QA 점수표와 88점 품질 게이트
+- 로고, 명함, SNS 프로필/배너, 포스터, 카드뉴스, 모션 스토리보드를 하나의 Brand DNA로 연결
 - 한 주제를 네이버 블로그, 인스타그램, 스레드, 유튜브 쇼츠 등 채널별 원고로 재기획
 - 브랜드 말투, 타깃 감정, 콘텐츠 목적, CTA를 유지한 멀티채널 SNS 콘텐츠 제작
 - 홈페이지 제작 전 필요한 브랜드, 타깃, 전환 목표, 콘텐츠, 자산, 디자인 방향 워크시트 수집
@@ -52,6 +56,11 @@ ebook-studio/
 
 logo-automation-system/
 `-- SKILL.md
+
+one-person-brand-visual-kit/
+|-- SKILL.md
+|-- agents/
+`-- references/
 
 homepage-brief-to-site/
 |-- SKILL.md
@@ -84,6 +93,7 @@ cd .\jamyeong-codex-skills
 Copy-Item -Recurse -Force .\ebook-studio "$env:USERPROFILE\.codex\skills\ebook-studio"
 Copy-Item -Recurse -Force .\brand-sns-content-studio "$env:USERPROFILE\.codex\skills\brand-sns-content-studio"
 Copy-Item -Recurse -Force .\logo-automation-system "$env:USERPROFILE\.codex\skills\logo-automation-system"
+Copy-Item -Recurse -Force .\one-person-brand-visual-kit "$env:USERPROFILE\.codex\skills\one-person-brand-visual-kit"
 Copy-Item -Recurse -Force .\homepage-brief-to-site "$env:USERPROFILE\.codex\skills\homepage-brief-to-site"
 Copy-Item -Recurse -Force .\anime-cardnews-studio "$env:USERPROFILE\.codex\skills\anime-cardnews-studio"
 Copy-Item -Recurse -Force .\motion-graphic-studio "$env:USERPROFILE\.codex\skills\motion-graphic-studio"
@@ -99,13 +109,14 @@ mkdir -p ~/.codex/skills
 cp -R ebook-studio ~/.codex/skills/ebook-studio
 cp -R brand-sns-content-studio ~/.codex/skills/brand-sns-content-studio
 cp -R logo-automation-system ~/.codex/skills/logo-automation-system
+cp -R one-person-brand-visual-kit ~/.codex/skills/one-person-brand-visual-kit
 cp -R homepage-brief-to-site ~/.codex/skills/homepage-brief-to-site
 cp -R anime-cardnews-studio ~/.codex/skills/anime-cardnews-studio
 cp -R motion-graphic-studio ~/.codex/skills/motion-graphic-studio
 cp -R naver-blog-ai-poster ~/.codex/skills/naver-blog-ai-poster
 ```
 
-설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, `$homepage-brief-to-site`, `$anime-cardnews-studio`, `$motion-graphic-studio`, 또는 `$naver-blog-ai-poster`로 호출할 수 있습니다.
+설치 후 새 Codex 작업에서 `$ebook-studio`, `$brand-sns-content-studio`, `$logo-automation-system`, `$one-person-brand-visual-kit`, `$homepage-brief-to-site`, `$anime-cardnews-studio`, `$motion-graphic-studio`, 또는 `$naver-blog-ai-poster`로 호출할 수 있습니다.
 
 `motion-graphic-studio` GitHub 폴더 링크:
 
@@ -124,6 +135,11 @@ $ebook-studio
 
 ```text
 Use $logo-automation-system to create logo concepts, variations, mockups, and brand guidelines for a premium Korean tea brand. Main color is deep green, target audience is women in their 30s and 40s, and the mood is calm, refined, and natural.
+```
+
+```text
+$one-person-brand-visual-kit
+자명스쿨처럼 40~60대 여성을 위한 1인 창업 강의 브랜드의 로고, 명함, SNS 배너, 포스터, 카드뉴스까지 고급스럽게 잡아줘. 브랜드마다 같은 템플릿처럼 보이지 않게 QA까지 해줘.
 ```
 
 ```text
