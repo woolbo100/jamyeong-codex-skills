@@ -1,0 +1,23 @@
+{
+  "warm-editorial": {
+    "accent": "#A45C40",
+    "text": "#342B27",
+    "muted": "#F5EFE8",
+    "palette": ["ivory", "warm gray", "terracotta"],
+    "direction": "natural light, premium paper texture, restrained editorial composition"
+  },
+  "baekdohwa-luxury": {
+    "accent": "#8A1C3A",
+    "text": "#21191C",
+    "muted": "#F3E8E7",
+    "palette": ["deep burgundy", "black", "champagne gold"],
+    "direction": "mother-of-pearl and hanji texture, cinematic contrast, mature mysterious femininity"
+  },
+  "lumora-healing": {
+    "accent": "#8065A8",
+    "text": "#30293A",
+    "muted": "#F2ECF6",
+    "palette": ["lavender", "dusty rose", "cream", "soft gold"],
+    "direction": "dawn mist, soft light particles, lyrical inner-growth imagery"
+  }
+}
