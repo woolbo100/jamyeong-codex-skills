@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Jamyung School brand asset">
+  <defs>
+    <style>
+      .kr { font-family: "Noto Serif KR", "Noto Sans KR", "Malgun Gothic", serif; }
+      .sans { font-family: "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; }
+      .brand { fill: #36204F; }
+      .plum { fill: #5A347A; }
+      .ink { fill: #242128; }
+      .muted { fill: #8B8178; }
+      .gold { fill: #C8A96B; }
+      .small { font-size: 24px; letter-spacing: 0; }
+    </style>
+    <linearGradient id="softPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#36204F"/>
+      <stop offset="100%" stop-color="#5A347A"/>
+    </linearGradient>
+    <pattern id="quietGrid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0v42" fill="none" stroke="#D8CDE8" stroke-width="1" opacity=".42"/>
+    </pattern>
+  </defs>
+  
+  <g transform="translate(82 82) scale(1.8)">
+    <rect x="0" y="0" width="96" height="96" rx="18" fill="#F7F1E8"/>
+    <path d="M28 68V25h12v30c0 10 6 15 15 15 13 0 22-10 22-27V25h12v43H77v-9c-6 8-14 12-25 12-14 0-24-9-24-23Z" fill="#36204F"/>
+    <path d="M25 23h45" stroke="#C8A96B" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="307" y="163" class="kr" fill="#F7F1E8" font-size="86" font-weight="800">자명스쿨</text>
+  <text x="313" y="218" class="sans" fill="#D8CDE8" font-size="28" font-weight="500">AI · 콘텐츠 · 1인 비즈니스 교육</text>
+  <path d="M312 250H757" stroke="#C8A96B" stroke-width="5" stroke-linecap="round"/>
+  <text x="313" y="292" class="sans" fill="#FFFDF8" font-size="24">경험을 콘텐츠로, 콘텐츠를 새로운 일로</text>
+
+</svg>

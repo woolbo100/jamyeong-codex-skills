@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-label="Jamyung School brand asset">
+  <defs>
+    <style>
+      .kr { font-family: "Noto Serif KR", "Noto Sans KR", "Malgun Gothic", serif; }
+      .sans { font-family: "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; }
+      .brand { fill: #36204F; }
+      .plum { fill: #5A347A; }
+      .ink { fill: #242128; }
+      .muted { fill: #8B8178; }
+      .gold { fill: #C8A96B; }
+      .small { font-size: 24px; letter-spacing: 0; }
+    </style>
+    <linearGradient id="softPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#36204F"/>
+      <stop offset="100%" stop-color="#5A347A"/>
+    </linearGradient>
+    <pattern id="quietGrid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0v42" fill="none" stroke="#D8CDE8" stroke-width="1" opacity=".42"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1440" height="1080" fill="#F7F1E8"/>
+  <text x="90" y="120" class="kr brand" font-size="66" font-weight="850">Purple Archive</text>
+  <text x="92" y="174" class="sans muted" font-size="28">Jamyung School visual direction</text>
+  <rect x="90" y="250" width="260" height="260" rx="24" fill="#36204F"/>
+  <rect x="390" y="250" width="260" height="260" rx="24" fill="#5A347A"/>
+  <rect x="690" y="250" width="260" height="260" rx="24" fill="#F7F1E8" stroke="#D8CDE8" stroke-width="2"/>
+  <rect x="990" y="250" width="260" height="260" rx="24" fill="#242128"/>
+  <text x="90" y="575" class="sans ink" font-size="26">Deep Purple #36204F</text>
+  <text x="390" y="575" class="sans ink" font-size="26">Plum #5A347A</text>
+  <text x="690" y="575" class="sans ink" font-size="26">Warm Ivory #F7F1E8</text>
+  <text x="990" y="575" class="sans ink" font-size="26">Charcoal #242128</text>
+  <rect x="90" y="690" width="1260" height="250" rx="28" fill="#FFFDF8" stroke="#D8CDE8" stroke-width="2"/>
+  <text x="150" y="790" class="kr brand" font-size="52" font-weight="850">경험을 콘텐츠로, 콘텐츠를 새로운 일로</text>
+  <text x="150" y="858" class="sans ink" font-size="32">AI를 젊은 사람의 기술이 아니라 중장년의 두 번째 일 도구로 번역합니다.</text>
+
+</svg>
